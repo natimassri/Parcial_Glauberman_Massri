@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Glauberman-Massri</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
+    <link rel = "stylesheet" href="style.css">
+  </head>
+  <body>
+    <main>
+        <nav>
+            <img src="menu.png" class="menu-img">
+            <ul>
+                <li><a href="#noticia">Home</a></li>
+                <li><a href="#pie_pag">About Us</a></li>
+            </ul>
+        </nav>
+        <div class="noticia" id="noticia"> 
+            <h1>Palermo, el barrio que no duerme ni <br>deja dormir</h1>
+            <h3>Análisis de las denuncias por ruidos molestos en la Ciudad Autónoma de Buenos Aires</h3>
+            <p> 
+                Palermo, uno de los barrios más populares y cosmopolitas de la Ciudad Autónoma de Buenos Aires (CABA), es conocido por su vida nocturna y su gran oferta gastronómica y cultural. Sin embargo, un nuevo análisis de datos revela que es uno de los barrios más ruidosos de la ciudad, con un aumento significativo de las denuncias por ruidos molestos en los últimos años. Según los datos recopilados y visualizados por expertos, Palermo ha registrado la mayor cantidad de denuncias por ruidos molestos en la ciudad, especialmente durante los meses de verano.
+            </p>
+            <div class="graficos">
+                <h2>Denuncias por ruidos molestos en la ciudad</h2>
+                <div id="chart1"> </div>
+                <span class="epigrafe">
+                    <p>Mapa coroplético de CABA de denuncias por barrio</p>
+                </span>
+            </div>
+            <p> 
+                El mapa de coroplético muestra una concentración de denuncias por ruido molesto en el barrio de Palermo, siendo el área donde se registran la mayor parte de las quejas. A su vez, podemos diferenciar otros barrios con muchas denuncias en una escala de grises más opacos. 
+            </p>
+            <div class="graficos">
+                <h2>El ruido en Palermo: una cuestión de bares, restaurantes y fiestas</h2>
+                <div id="chart2"> </div>
+                <span class="epigrafe">
+                    <p>Ubicación de denuncias en el barrio de Palermo</p>
+                </span>
+            </div>
+            <p> 
+                El mapa de Palermo con los puntos de las denuncias muestra claramente las zonas más afectadas por el ruido molesto en el barrio. Se puede ver como los puntos se concentran en Palermo Soho y Palermo Hollywood, que es donde más bares y restaurantes hay. Los vecinos de la zona han sido los más activos en la realización de denuncias por ruidos molestos, y esto se ve reflejado en la cantidad de puntos de color rojo que se extiende en este sector del mapa
+            </p>
+            <div class="graficos">
+                <h2> Los decibeles del verano: denuncias por mes en Palermo </h2>
+                <div id="chart3"> </div>
+                <span class="epigrafe">
+                    <p>Cantidad de denuncias por mes en Palermo</p>
+                </span>
+            </div>
+            <p>
+                El análisis de los datos revela que la mayoría de las denuncias por ruido molesto en el barrio de Palermo se concentran entre octubre y marzo, teniendo los picos más altos en noviembre y diciembre. Esto podría deberse al aumento de la actividad en el barrio durante las vacaciones, con más personas saliendo a las calles y disfrutando de las noches cálidas, lo que a su vez genera un mayor nivel de ruido.  
+            </p>
+            <div class="graficos">
+                <h2>Palermo a la noche, un barrio que no frena</h2>
+                <h5> <span style="color: #c7302f; font-weight: bold;">CABA</span><span style="color: black; font-weight: bold;"> vs</span> <span style="color: #FFA726; font-weight: bold;">Palermo</span></h5>
+                <div id="chart4"
+                style="height: 340px"
+                ></div>
+                <div class="buttons">
+                    <button class="btn_line_chart" type="button" onclick="showGraph(this)" id="btn_todos">TOTAL</button>
+                    <button class="btn_line_chart" type="button" onclick="showGraph(this)" id="btn_nov">NOVIEMBRE</button>
+                    <button class="btn_line_chart" type="button" onclick="showGraph(this)" id="btn_dic">DICIEMBRE</button>
+                </div>
+                <span class="epigrafe">
+                    <p>Porcentaje de denuncias por hora en Palermo vs CABA</p>
+                </span>
+            </div>
+            <p>
+                El gráfico de líneas muestra el porcentaje de denuncias por hora en Palermo en comparación con el de toda la Ciudad de Buenos Aires. Se puede observar que en Palermo, las denuncias ocurren con mayor frecuencia durante la noche, especialmente entre las 22:00 y las 01:00 hs, mientras que en el total de la ciudad, las denuncias se concentran durante el mediodía, entre las 11:00 y las 14:00hs. Esto puede deberse a que Palermo es un barrio conocido por su vida nocturna y sus bares y restaurantes, lo que puede generar más ruido en horarios nocturnos y demuestra que Palermo es "un barrio que no duerme”.
+
+            </p>
+            <div class="graficos">
+                <h2>¿A través de qué canales denuncian los palermitanos?</h2>
+                <div id="chart5"> </div>
+                <span class="epigrafe">
+                    <p>Canales utilizados para denunciar ruidos molestos</p>
+                </span>
+            </div>
+            <p>
+                Los canales más utilizados por los palermitanos son GCS Web y la APP BA 147 que se llevan casi el 100% de las denuncias.
+            </p>
+            <p> 
+                En resumen, Palermo es un barrio que no duerme y en el que las denuncias por ruidos molestos son una constante, especialmente durante el verano. Aunque el gobierno ha tomado medidas para controlar el problema, aún no ha encontrado una solución definitiva. Los datos presentados en los gráficos muestran claramente la necesidad de seguir trabajando en este tema para lograr una convivencia pacífica entre los vecinos y su entorno.
+            </p>
+            <br>
+            <p><b>Autores: </b> Tomás Glauberman y Natalia Massri</p>
+            <p><b>Fuente: </b> Buenos Aires Data - Sistema Único de Atención Ciudadana</p>
+    </main>
+    <footer>
+        <section class="columns" id="pie_pag">
+            <div class="col1">
+                <h2>Integrantes</h2>
+                <p>Tomás Glauberman</p>
+                <p>Natalia Massri</p>
+            </div>
+            <div class="col2">
+                <h2>Metodología</h2>
+                <p> En primer lugar, analizamos y filtramos los datos con Numbers para ver todo los tópicos.
+                    Para algunos gráficos, modificamos los archivos csv por medio de python para poder obtener el mes/día con letras/hora entre otros de cada reclamo. Luego, en js filtramos por medio de los parámetros anteriores para poder graficar más específicamente
+                </p>
+            </div>
+            <div class="col3">
+                <h2>Contacto</h2>
+                <p>utdt@mail.utdt.edu</p>
+                <p>+54 9 11 5169-7000</p>
+                <br> 
+                <p>Universidad Torcuato Di Tella</p> 
+            </div>
+        </section>
+    </footer>
+    <script>
+
+        // function showGraph(btn){
+  
+        //   Array.prototype.slice.call( document.getElementsByClassName("mapa")).forEach((m)=>{
+        //     m.classList.remove("visible")
+        //     m.classList.add("hidden")
+        //   })
+  
+        //   var mes_mapa = btn.id.split("_")[1]
+        //   var id_mapa = "chart_" + mes_mapa
+        //   var miMapa = document.getElementById(id_mapa)
+          
+        //   miMapa.classList.remove("hidden")
+        //   miMapa.classList.add("visible")
+  
+        // }
+  
+      </script>
+    <script src="https://cdn.jsdelivr.net/npm/d3@7"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@observablehq/plot@0.6"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/iframe-resizer/4.3.2/iframeResizer.contentWindow.js"></script>
+    <script src="dataviz_1/script.js"></script>
+    <script src="dataviz_2/script.js"></script>
+    <script src="dataviz_3/script.js"></script>
+    <script src="dataviz_4_todos/script.js"></script>
+    <script src="dataviz_4_nov/script.js"></script>
+    <script src="dataviz_4_dic/script.js"></script>
+    <script src="dataviz_5/script.js"></script>
+    <script>
+        plotMap("dataviz_1/Ruidos_filtrados.csv","#chart1","dataviz_1/barrios-caba.geojson") +
+        plotMap_palermo("dataviz_2/Ruidos_filtrados.csv","#chart2","dataviz_2/callesPalermo.geojson", "dataviz_2/palermo.geojson") 
+        plotBar("dataviz_3/ruidos_mes.csv", "#chart3")
+        plotLine("dataviz_4_todos/archivo_con_hora_sola.csv", "#chart4")
+        //plotLineNov("dataviz_4_nov/ruidos_mes_hora.csv", "#chart4_nov")
+        //plotLineDic("dataviz_4_dic/ruidos_mes_hora.csv", "#chart4_dic")
+
+        plotBar_5("dataviz_5/Ruidos_filtrados.csv", "#chart5")
+
+        function showGraph(btn){
+            var chart_div = document.querySelector("#chart4");
+            chart_div.innerHTML = "";
+
+            if (btn.id == "btn_todos"){
+                plotLine("dataviz_4_todos/archivo_con_hora_sola.csv", "#chart4")
+            }
+            else if (btn.id == "btn_nov"){
+                plotLineNov("dataviz_4_nov/ruidos_mes_hora.csv", "#chart4")
+            }
+            else if (btn.id == "btn_dic"){
+                plotLineDic("dataviz_4_dic/ruidos_mes_hora.csv", "#chart4")
+            }
+        }
+    </script>
+  </body>
+</html>
